@@ -5,19 +5,26 @@
 
 
 import { useState } from "react";
+import { MyButton2 } from "./MyButton2";
 
 export function MyButton4(props){
-    const [counter, setCounter] = useState(0);
+    const [mySpecialName, jkfsdajklfjsdalkfj] = useState(0);
+    const [counter2, setCounter2] = useState(1);
 
     return (
         <div>
-            <p>The counter is {counter} </p>
+            <p>The counter is {mySpecialName} </p>
+            <p>The counter is {counter2} </p>
             <button onClick={() => {
-                setCounter(counter + 1);
-                console.log("The counter is " + counter);
+                jkfsdajklfjsdalkfj(mySpecialName + 1);
+                setCounter2(counter2 * 2);
+                console.log("The counter is " + mySpecialName);
             }} >
                 {props.buttonText}
             </button>
+
+
+            <MyButton2 buttonText={counter2.toString()}/>
         </div>
         
     )

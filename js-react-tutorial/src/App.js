@@ -6,12 +6,13 @@ import { MyButton3 } from './DAMLComponents/Buttons/MyButton3';
 import { MyButton4 } from './DAMLComponents/Buttons/MyButton4';
 import { DogsListPrintedNotShown } from './DAMLComponents/DataFetching/FetchAndPrintDogs';
 import { DogsListDisplayed } from './DAMLComponents/DataFetching/FetchAndShowDogs';
+import { ParentComponent } from './DAMLComponents/ContextDemo/ParentComponent';
+import { ParentWithoutContext } from './DAMLComponents/ContextDemo/WithoutContext/Parent';
 
 function App() {
 	return (
-		<div>
-			<MyButton4 buttonText="Press me"/>
-			<DogsListDisplayed/>
+		<div style={{border : "1px solid black"}}>
+			<ParentWithoutContext/>
 		</div>
 	);
 }

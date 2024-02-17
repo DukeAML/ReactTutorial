@@ -3,7 +3,7 @@
  * Key concept : failure to re-render without using hooks
  */
 
-export function MyButton(props){
+export function MyButton3(props){
     let counter = 0;
 
     return (
